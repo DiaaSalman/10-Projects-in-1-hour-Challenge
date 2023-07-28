@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: rubik, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+button {
+  border: none;
+  background-color: #cd7548;
+  padding: 1.2rem 2.4rem;
+  color: #303030;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  position: fixed;
+  left: 2rem;
+  top: 2rem;
+}
+
+.close-btn {
+  background-color: #303030;
+  color: #cd7548;
+}
+
+nav {
+  position: relative;
+  height: 100vh;
+  padding: 2rem;
+  background-color: #cd7548;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25rem;
+  transform: translateX(-100%);
+  transition: 0.3s;
+}
+
+nav.active {
+  transform: translateX(0);
+}
+
+nav ul {
+  list-style: none;
+  display: grid;
+  gap: 1.8rem;
+  padding-top: 7.2rem;
+}
+
+nav ul li a {
+  color: #eee;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #303030;
+  font-weight: 600;
+}

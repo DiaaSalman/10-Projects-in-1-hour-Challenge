@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: rubik, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 4.8rem;
+}
+
+button {
+  border: none;
+  background-color: #cd7548;
+  padding: 1.2rem 2.4rem;
+  color: #303030;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(1);
+  transform: translate(4px, 4px);
+}
